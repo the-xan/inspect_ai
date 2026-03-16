@@ -20,10 +20,6 @@ path/
 .vscode/
 *.swp
 
-# Inspect AI logs
-**/logs/
-*.log
-
 # Jupyter
 .ipynb_checkpoints/
 
