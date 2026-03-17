@@ -1,8 +1,6 @@
 import random
-from inspect_ai import Task, task, eval
+
 from inspect_ai.dataset import Sample
-from inspect_ai.scorer import choice
-from inspect_ai.solver import multiple_choice, system_message
 
 # For reproducibility
 random.seed(42)
@@ -49,10 +47,9 @@ def generate_distractors(correct: str, n: int = 3) -> list[str]:
     """
     distractors = set()
 
-    offsets = [-3, -2, -1, 1, 2, 3]  # YOUR CODE HERE
+    offsets = [-3, -2, -1, 1, 2, 3]
 
     while len(distractors) < n:
-        # YOUR CODE HERE
         offset = random.choice(offsets)
         candidate = str(int(correct) + offset)
         if candidate != correct:
@@ -87,7 +84,6 @@ def create_samples(
     samples = []
 
     for question, correct in questions:
-        # YOUR CODE HERE
 
         # 1. Generate 3 distractors (use generate_distractors() function)
         # 2. Build list of 4 options

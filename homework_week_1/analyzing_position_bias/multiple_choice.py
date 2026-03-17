@@ -24,8 +24,8 @@ def position_bias_task(
     return Task(
         dataset=samples,
         solver=[
-            system_message("Select correct answer. You may choose multiple options if needed."),
-            multiple_choice(multiple_correct=True)
+            system_message("Select correct answer"),
+            multiple_choice()
         ],
         scorer=choice()
     )
