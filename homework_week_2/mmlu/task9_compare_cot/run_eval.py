@@ -42,3 +42,15 @@ print(f"Chain-of-thought accuracy: {acc_cot:.1%}")
 print(f"Mean difference (baseline - CoT): {mean_diff:+.3f}")
 print(f"p-value:                  {p_value:.4f}")
 print(f"Significant at α=0.05:    {is_significant}")
+
+# Result
+# choice
+# accuracy 0.260
+# stderr 0.038
+#
+#
+# Baseline accuracy: 31.3 %
+# Chain - of - thought accuracy: 26.0 %
+# Mean difference(baseline - CoT): +0.053
+# p - value: 0.2099
+# Significant at α = 0.05:    False
